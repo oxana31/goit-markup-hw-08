@@ -1,33 +1,89 @@
-.features-list {
-    display: flex;
-}
-
 .features-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 120px;
-    background-color: #F5F4FA;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 120px;
+        background-color: #F5F4FA;
+    }
+
+.features-list__item {
+    width: 450px;
 }
 
 .title-list {
     margin-top: 30px;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 1.1;
+    @include font (14px, 700, 16.41px);
     text-transform: uppercase;
+    text-align: center;
     color: var(--title-text-color);
 }
 
-.features-list__item {
-    max-width: 270px;
-
-    &:not(:last-child) {
-        margin-right: 30px;
-        }
-}
-
 .decription {
-    line-height: 1.7;
+    @include font (14px, 400, 24px);
     margin-top: 10px;
 }
+
+@media screen and (min-width: 768px) {
+    .features-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
+    .features-list__item {
+        width: calc((100% - 2 * 30px) / 2);
+        margin: 15px;
+    }
+    .features-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 120px;
+        background-color: #F5F4FA;
+    }
+    .title-list {
+        text-align: left;
+    } 
+}
+
+@media screen and (min-width: 1200px) {
+    .features-list {
+        margin: -15px;
+    }
+    .features-list__item {
+        width: calc((100% - 4 * 30px) / 4);
+        margin: 15px; 
+        }
+}
+// .features-list {
+//     display: flex;
+// }
+
+// .features-icon {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 120px;
+//     background-color: #F5F4FA;
+// }
+
+// .title-list {
+//     margin-top: 30px;
+//     font-size: 14px;
+//     font-weight: 700;
+//     line-height: 1.1;
+//     text-transform: uppercase;
+//     color: var(--title-text-color);
+// }
+
+// .features-list__item {
+//     max-width: 270px;
+
+//     &:not(:last-child) {
+//         margin-right: 30px;
+//         }
+// }
+
+// .decription {
+//     line-height: 1.7;
+//     margin-top: 10px;
+// }

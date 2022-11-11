@@ -81,8 +81,14 @@ body {
   }
 }
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section-team {
@@ -378,7 +384,6 @@ body {
   margin-right: auto;
   margin-left: auto;
   min-width: 480px;
-  height: 400px;
   text-align: center;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hw-8/Header\ img.jpg);
   background-size: cover;
@@ -461,10 +466,12 @@ body {
     line-height: 1.36;
   }
 }
-.features-list {
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .main-button {
+    min-width: 216px;
+    padding: 10px 30px;
+  }
 }
-
 .features-icon {
   display: flex;
   justify-content: center;
@@ -473,27 +480,57 @@ body {
   background-color: #F5F4FA;
 }
 
+.features-list__item {
+  width: 450px;
+}
+
 .title-list {
   margin-top: 30px;
   font-size: 14px;
   font-weight: 700;
-  line-height: 1.1;
+  line-height: 1.17;
   text-transform: uppercase;
+  text-align: center;
   color: var(--title-text-color);
 }
 
-.features-list__item {
-  max-width: 270px;
-}
-.features-list__item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .decription {
-  line-height: 1.7;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
   margin-top: 10px;
 }
 
+@media screen and (min-width: 768px) {
+  .features-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  .features-list__item {
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+  .features-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    background-color: #F5F4FA;
+  }
+  .title-list {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features-list {
+    margin: -15px;
+  }
+  .features-list__item {
+    width: calc((100% - 120px) / 4);
+    margin: 15px;
+  }
+}
 .title-section {
   font-weight: 700;
   font-size: 36px;
