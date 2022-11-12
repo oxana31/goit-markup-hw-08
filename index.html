@@ -195,9 +195,16 @@
                     <li class="list-card__item">
                         <picture>
                             <source
-                            srcset="./"
-                            />
-                        <img class="img-cards" src="./images/hw-8/team-1.jpg" alt="Чоловік в коричневій сорочці" width="270" height="260">
+                            srcset= "./images/hw-8/dextop-team-1.webp 1x, ./images/hw-8/dextop-team-1@2.webp 2x"
+                            media="(min-width: 1200px)"
+                            type="image/webp"
+                            >
+                            <source srcset="./images/hw-8/dextop-team-1.jpg 1x, ./images/hw-8/dextop-team-1@2.jpg 2x" media="(min-width: 1200px)">
+                            <source srcset="./images/hw-8/tablet-team-1.webp 1x, ./images/hw-8/tablet-team-1@2.webp 2x" media="(min-width: 768px)" type="image/webp">
+                            <source srcset="./images/hw-8/tablet-team-1.jpg 1x, ./images/hw-8/tablet-team-1@2.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./images/hw-8/team-1.webp 1x, ./images/hw-8/team-1@2.webp 2x" media="(max-width: 767px)" type="image/webp">
+                            <source srcset="./images/hw-8/team-1.jpg 1x, ./images/hw-8/team-1@2.jpg 2x" media="(max-width: 767px)" >
+                        <img class="img-cards" src="./images/hw-8/team-1.jpg" alt="Чоловік в коричневій сорочці" >
                         </picture>
                         <div class="list-card-desc">
                             <h3 class="title-card"> Ігор Дем'яненко </h3>
@@ -236,8 +243,21 @@
                     </li>
 
                     <li class="list-card__item">
-                        <img class="img-cards" src="./images/hw-1/team-member-2.jpg" alt="Жінка в піджаку" width="270"
-                            height="260">
+                        <picture>
+                            <source srcset="./images/hw-8/dextop-team-2.webp 1x, ./images/hw-8/dextop-team-2@2.webp 2x"
+                                media="(min-width: 1200px)" type="image/webp">
+                            <source srcset="./images/hw-8/dextop-team-2.jpg 1x, ./images/hw-8/dextop-team-2@2.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source srcset="./images/hw-8/tablet-team-2.webp 1x, ./images/hw-8/tablet-team-2@2.webp 2x"
+                                media="(min-width: 768px)" type="image/webp">
+                            <source srcset="./images/hw-8/tablet-team-2.jpg 1x, ./images/hw-8/tablet-team-2@2.jpg 2x"
+                                media="(min-width: 768px)">
+                            <source srcset="./images/hw-8/team-2.webp 1x, ./images/hw-8/team-2@2.webp 2x" media="(max-width: 767px)"
+                                type="image/webp">
+                            <source srcset="./images/hw-8/team-2.jpg 1x, ./images/hw-8/team-2@2.jpg 2x" media="(max-width: 767px)">
+                            <img class="img-cards" src="./images/hw-8/team-2.jpg" alt="Жінка в піджаку">
+                        </picture>
+
                         <div class="list-card-desc">
                             <h3 class="title-card"> Ольга Рєпіна </h3>
                             <p lang="en" class="desc-card"> Frontend Developer </p>
