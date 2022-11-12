@@ -1,9 +1,7 @@
-.title-section {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.2;
-    text-align: center;
-    color: var(--title-text-color);
+@media screen and (max-width: 1199px) {
+    .section-work {
+        display: none;
+    }
 }
 
 .work-list {

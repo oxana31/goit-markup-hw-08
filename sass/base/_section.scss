@@ -16,3 +16,13 @@
 .section-work {
     padding-bottom: 94px;
 }
+
+.title-section {
+    @include font (28px, 700, 32.81px) ;
+    text-align: center;
+    color: var(--title-text-color);
+
+    @media screen and (min-width: 1200px) {
+        @include font (36px, 700, 42px) ;
+    }   
+}
