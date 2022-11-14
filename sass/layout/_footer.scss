@@ -67,9 +67,8 @@
 @media screen and (min-width: 768px) {
     .tablet__footer-container {
         display: flex;
+        justify-content: center;
         text-align: center;
-
-        justify-content: space-around;
     }
 }
 
