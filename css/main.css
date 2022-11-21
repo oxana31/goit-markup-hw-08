@@ -209,6 +209,11 @@ body {
   border-radius: 2px;
   background-color: var(--accent-color);
 }
+@media screen and (min-width: 1200px) {
+  .current::after {
+    top: 48px;
+  }
+}
 
 .contacts {
   display: flex;

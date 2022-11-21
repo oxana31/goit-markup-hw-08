@@ -81,7 +81,10 @@
             position: absolute;
             top: 46px;
             left: 0;
-
+            
+            @media screen and (min-width:1200px) {
+                top: 48px;
+            }
             content: " ";
             display: block;
             width: 100%;
@@ -126,7 +129,7 @@
             margin-right: 10px;
             fill: currentColor;
             }
-     }
+    }
 @media screen and (min-width: 768px) {
     .mobile-menu {
         display: none;
