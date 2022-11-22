@@ -294,15 +294,15 @@
     @include font (18px, 500, 22px);
     color: var(--accent-color);
 }
-.menu-social__link + .menu-social__link::before {
-    display: inline-block;
+.menu-social__link::after {
     content: "";
+    margin-left: 10px;
     width: 22px;
-    // height: 30px;
+    height: 0;
     border: 1px solid rgba(33, 33, 33, 0.2);
     transform: rotate(90deg);
 
-    background-image: url(../../images/hw-8/Line\ 1.svg);
+    // background-image: url(../images/hw-8/Line\ 1.svg);
 }
 }
 

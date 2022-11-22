@@ -9,7 +9,7 @@
 
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
-        url(../../images/hw-8/hero-img.jpg);
+        url(../images/hw-8/hero-img.jpg);
         background-size: cover;
         background-color: #C4C4C4;
     
@@ -17,7 +17,7 @@
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)), url(../../images/hw-8/hero-img@2x.jpg);
+            rgba(47, 48, 58, 0.4)), url(../images/hw-8/hero-img@2x.jpg);
             }
 
         &-title {
@@ -64,7 +64,7 @@
         .hero {
             background-image: linear-gradient(rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-            url(../../images/hw-8/hero-tablet.jpg);
+            url(../images/hw-8/hero-tablet.jpg);
             background-size: cover;
             background-color: #C4C4C4;
             
@@ -72,7 +72,7 @@
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
                 background-image:  linear-gradient(rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4)), url(../../images/hw-8/hero-tablet@2x.jpg);
+                rgba(47, 48, 58, 0.4)), url(../images/hw-8/hero-tablet@2x.jpg);
             }
         }
     }
@@ -85,7 +85,7 @@
 
             background-image: linear-gradient(rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-            url(../../images/hw-8/hero-dextop.jpg);
+            url(../images/hw-8/hero-dextop.jpg);
             background-size: cover;
             background-color: #C4C4C4;
             
@@ -93,7 +93,7 @@
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
                 background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4)), url(../../images/hw-8/hero-dextop@2x.jpg);
+                rgba(47, 48, 58, 0.4)), url(../images/hw-8/hero-dextop@2x.jpg);
             }
 
             &-title {

@@ -80,7 +80,7 @@
     display: block;
 
     &__name {
-        display: inline-block;
+        display: block;
         margin-bottom: 4px;
         
         @include font (12px, 400, 14.06px);
