@@ -61,15 +61,19 @@
     @media screen and (min-width: 1200px) {
         display: flex;
         align-items: baseline;
+        text-align: left;
     }
 }
 
-@media screen and (min-width: 768px) {
-    .tablet__footer-container {
+.tablet__footer-container {
+@media screen and (min-width: 768px) { 
         display: flex;
         justify-content: center;
         text-align: center;
     }
+@media screen and (min-width: 1200px) {
+    text-align: left;
+}
 }
 
 .footer-address {

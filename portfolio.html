@@ -18,16 +18,24 @@
 </head>
 
 <body>
-    <header class="header">
+
+        <header class="header">
         <div class="container header-container">
             <nav class="nav">
                 <a class="header-logo link" href="./index.html" lang="en"><span class="part-logo">Web</span>Studio</a>
                 <ul class="nav-list list">
-                    <li class="nav-list__item"><a class="nav__link link" href="./index.html">Студія</a></li>
-                    <li class="nav-list__item"><a class="nav__link link current" href="./portfolio.html">Портфоліо</a></li>
+                    <li class="nav-list__item"><a class="nav__link link current" href="./index.html">Студія</a></li>
+                    <li class="nav-list__item"><a class="nav__link link" href="./portfolio.html">Портфоліо</a></li>
                     <li class="nav-list__item"><a class="nav__link link" href="">Контакти</a></li>
                 </ul>
             </nav>
+            <button type="button" class="mobile-open-btn js-open-menu">
+                <svg class="mobile-open-btn__icon" width="40" height="40" aria-label="Перемикач мобільного меню">
+                    <use href="./images/symbol-defs.svg#burger-menu-icon"></use>
+                </svg>
+            </button>
+
+
             <ul class="contacts list">
                 <li>
                     <a class="contact contact__mail link" href="mailto:info@devstudio.com">
@@ -46,6 +54,41 @@
                     </a>
                 </li>
             </ul>
+        
+        </div>
+        <div class="mobile-menu js-menu-container" >
+            <div class="container mobile-menu__container">
+                <button type="button" class="mobile-close-btn js-close-menu" >
+                    <svg class="mobile-close-btn__icon" width="40" height="40">
+                        <use href="./images/symbol-defs.svg#icon-close_menu"></use>
+                    </svg>
+                </button>
+                <ul class="menu-list list">
+                    <li class="menu-list__item"><a class="menu__link link" href="./index.html">Студія</a></li>
+                    <li class="menu-list__item"><a class="menu__link link" href="./portfolio.html">Портфоліо</a></li>
+                    <li class="menu-list__item"><a class="menu__link link" href="">Контакти</a></li>
+                </ul>
+
+                <ul class="menu-contacts list">
+                    <li class="menu-contact__icon">
+                        <a class="menu-contact menu-contact__tel link" href="tel:+380961111111">
+                            +38 096 111 11 11
+                        </a>
+                    </li>
+                    <li class="menu-contact__icon">
+                        <a class="menu-contact menu-contact__mail link" href="mailto:info@devstudio.com">
+                            info@devstudio.com
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="menu-social list">
+                    <li class="menu-social__item"><a href="" class="menu-social__link link"> Instagram </a></li>
+                    <li class="menu-social__item"><a href="" class="menu-social__link link"> Twitter </a></li>
+                    <li class="menu-social__item"><a href="" class="menu-social__link link"> Facebook </a></li>
+                    <li class="menu-social__item"><a href="" class="menu-social__link link"> LinkedIn </a></li>
+                </ul>
+            </div>
         </div>
     </header>
 
@@ -99,7 +142,7 @@
 
                             <div class="project-card">
                                 <h2 class="project-title"> Технокряк </h2>
-                                <p class="project-desc"> Веб-сайт </p>
+                                <p class="project-desc project-desc-first"> Веб-сайт </p>
                             </div>
                         </a>
                     </li>
@@ -129,7 +172,7 @@
                             </div>
 
                             <div class="project-card">
-                                <h2 class="project-title"> Постер <span lang="en">Orlean vs Golden Star</span> </h2>
+                                <h2 class="project-title"> Постер <span lang="en">New Orlean vs Golden Star</span> </h2>
                                 <p class="project-desc"> Дизайн </p>
                             </div>
                         </a>
@@ -351,54 +394,56 @@
 
     <footer class="footer">
         <div class="container footer-container">
-            <div class="footer-address">
-                <a class="footer-logo link" href="./index.html" lang="en"> <span class="part-logo">Web</span>Studio</a>
-                <address class="address">
+            <div class="tablet__footer-container">
+                <div class="footer-address">
+                    <a class="footer-logo link" href="./index.html" lang="en"> <span class="part-logo">Web</span>Studio</a>
+                    <address class="address">
                     <ul class="address-list list">
                         <li class="address-list__item"><a class="address-link link"
-                                href="https://goo.gl/maps/sUj56XeYTJr8YGq59" target="_blank" rel="noreferrer noopener">м.
-                                Київ, пр-т Лесі Українки, 26</a> </li>
+                                href="https://goo.gl/maps/sUj56XeYTJr8YGq59" target="_blank"
+                                rel="noreferrer noopener">м. Київ, пр-т Лесі Українки, 26</a> </li>
                         <li class="address-list__item"><a class="address-contact-link link"
                                 href="mailto:info@devstudio.com"> info@devstudio.com</a>
                         <li class="address-list__item"><a class="address-contact-link link" href="tel:+380961111111"> +38
                                 096 111 11 11</a>
                     </ul>
-                </address>
-            </div>
-            <div class="footer-social">
-                <p class="title-social">Приєднуйтесь</p>
-                <ul class="footer-social-list list">
-                    <li class="footer-social-list__item">
-                        <a class="footer-social-list__link" href="">
+                    </address>
+                </div>
+                <div class="footer-social">
+                    <p class="title-social">Приєднуйтесь</p>
+                    <ul class="footer-social-list list">
+                        <li class="footer-social-list__item">
+                            <a class="footer-social-list__link" href="">
                             <svg class="footer-social-list__icon" width="20" height="20">
                                 <use href="./images/symbol-defs.svg#icon-instagram"></use>
                             </svg>
-                        </a>
-                    </li>
-                    <li class="footer-social-list__item">
-                        <a class="footer-social-list__link" href="">
+                            </a>
+                        </li>
+                        <li class="footer-social-list__item">
+                            <a class="footer-social-list__link" href="">
                             <svg class="footer-social-list__icon" width="20" height="20">
                                 <use href="./images/symbol-defs.svg#icon-twitter"></use>
                             </svg>
-                        </a>
-                    </li>
-                    <li class="footer-social-list__item">
-                        <a class="footer-social-list__link" href="">
+                            </a>
+                        </li>
+                        <li class="footer-social-list__item">
+                            <a class="footer-social-list__link" href="">
                             <svg class="footer-social-list__icon" width="20" height="20">
                                 <use href="./images/symbol-defs.svg#icon-facebook"></use>
                             </svg>
-                        </a>
-                    </li>
-                    <li class="footer-social-list__item">
-                        <a class="footer-social-list__link" href="">
+                            </a>
+                        </li>
+                        <li class="footer-social-list__item">
+                            <a class="footer-social-list__link" href="">
                             <svg class="footer-social-list__icon" width="20" height="20">
                                 <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                             </svg>
-                        </a>
-                    </li>
-                </ul>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-    
+
             <form class="form-subscription">
                 <div class="footer-title-subscription">
                     <b class="title-subscription">Підпишіться на розсилку</b>
@@ -417,6 +462,7 @@
             </form>
         </div>
     </footer>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>

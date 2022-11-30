@@ -302,6 +302,7 @@ body {
     width: 100%;
     height: 100vh;
     overflow: auto;
+    position: fixed;
     background-color: white;
     opacity: 0;
     visibility: hidden;
@@ -320,6 +321,9 @@ body {
     background-color: transparent;
     border: none;
   }
+  .mobile-open-btn:hover, .mobile-open-btn:focus {
+    fill: var(--accent-color);
+  }
   .mobile-close-btn {
     position: absolute;
     top: 10px;
@@ -332,8 +336,8 @@ body {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-delay: 0ms;
   }
-  .mobile-close-btn:focus {
-    color: var(--accent-color);
+  .mobile-close-btn:hover, .mobile-close-btn:focus {
+    fill: var(--accent-color);
   }
   .menu-list {
     margin-bottom: 306px;
@@ -501,6 +505,11 @@ body {
 .features-list__item {
   width: 450px;
 }
+@media screen and (max-width: 767px) {
+  .features-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 
 .title-list {
   margin-top: 30px;
@@ -610,14 +619,14 @@ body {
   border-radius: 0px 0px 4px 4px;
   background-color: #fff;
 }
+@media screen and (max-width: 767px) {
+  .list-card__item {
+    margin-bottom: 30px;
+  }
+}
 @media screen and (min-width: 768px) {
   .list-card__item {
     width: calc((100% - 30px) / 2);
-  }
-}
-@media (min-width: 768px) and (max-width: 1199px) {
-  .list-card__item {
-    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -806,7 +815,6 @@ body {
 }
 
 .project-card {
-  width: 450px;
   padding: 20px 24px;
   border: 1px solid #EEEEEE;
   border-top: none;
@@ -836,6 +844,11 @@ body {
   font-weight: 400;
   line-height: 1.88;
   color: var(--primary-text-color);
+  margin-bottom: 20px;
+}
+
+.project-desc-first {
+  margin-bottom: 56px;
 }
 
 .project-img {
@@ -930,6 +943,7 @@ body {
   .footer-container {
     display: flex;
     align-items: baseline;
+    text-align: left;
   }
 }
 
@@ -940,6 +954,12 @@ body {
     text-align: center;
   }
 }
+@media screen and (min-width: 1200px) {
+  .tablet__footer-container {
+    text-align: left;
+  }
+}
+
 .footer-address {
   margin-bottom: 60px;
 }
