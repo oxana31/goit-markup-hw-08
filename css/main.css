@@ -420,7 +420,7 @@ body {
   }
 }
 .hero-title {
-  width: 360px;
+  max-width: 360px;
   margin: auto;
   font-size: 26px;
   font-weight: 900;
@@ -484,7 +484,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .hero-title {
-    width: 696px;
+    max-width: 696px;
     margin: auto;
     font-size: 44px;
     font-weight: 900;
@@ -789,6 +789,10 @@ body {
   margin-right: 8px;
 }
 
+.projects-list__item {
+  margin-bottom: 30px;
+}
+
 @media screen and (min-width: 768px) {
   .projects-list {
     display: flex;
@@ -796,13 +800,11 @@ body {
     margin-right: -30px;
     margin-bottom: -30px;
   }
+  .projects-list__item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
 }
-
-.projects-list__item {
-  margin-right: 30px;
-  margin-bottom: 30px;
-}
-
 .project-list__link {
   display: block;
   transition-property: box-shadow;
@@ -1042,8 +1044,8 @@ body {
   color: var(--primary-white-color);
 }
 
-.email-subscription {
-  width: 450px;
+.email-subscription__input {
+  width: 100%;
   height: 50px;
   padding-top: 15px;
   padding-left: 16px;
@@ -1056,15 +1058,20 @@ body {
   font-weight: 400;
   line-height: 1.25;
 }
+@media screen and (min-width: 480px) {
+  .email-subscription__input {
+    width: 450px;
+  }
+}
 @media screen and (min-width: 1200px) {
-  .email-subscription {
+  .email-subscription__input {
     width: 358px;
   }
 }
-.email-subscription::placeholder {
+.email-subscription__input::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
-.email-subscription:focus {
+.email-subscription__input:focus {
   outline: none;
 }
 
