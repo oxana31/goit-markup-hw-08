@@ -1092,6 +1092,7 @@ body {
   color: var(--primary-white-color);
   border: transparent;
   border-radius: 4px;
+  cursor: pointer;
 }
 @media screen and (max-width: 1199px) {
   .btn-subscription {
