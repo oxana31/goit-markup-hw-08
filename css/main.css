@@ -849,10 +849,11 @@ body {
   margin-bottom: 20px;
 }
 
-.project-desc-first {
-  margin-bottom: 56px;
+@media (min-width: 768px) and (max-width: 1199px) {
+  .project-desc-first {
+    margin-bottom: 56px;
+  }
 }
-
 .project-img {
   position: relative;
   overflow: hidden;
