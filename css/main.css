@@ -894,6 +894,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 354px;
+    height: 149px;
   }
 }
 @media screen and (min-width: 1200px) {
