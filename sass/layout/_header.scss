@@ -75,7 +75,12 @@
     .menu__link {
         color: var(--title-text-color);
         font-family: inherit;
-        @include font (40px, 500, 46.88px);
+        font-size:36px ;
+        font-weight: 500;
+        line-height: 1.17;
+        @media screen and (min-width:480px) {
+            @include font (40px, 500, 46.88px);
+        }
     
         transition-property: color;
         transition-duration: 250ms;
@@ -111,7 +116,26 @@
                 }
         }
     }
-
+.contact__icon-envelope {
+    @media (min-width: 768px) and (max-width:1199px) {
+        width: 14px;
+        height: 10px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 16px;
+        height: 12px;
+    }
+}
+.contact__icon-mobile {
+    @media (min-width: 768px) and (max-width:1199px) {
+        width: 10px;
+        height: 14px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 10px;
+        height: 16px;
+    }
+}
     .contacts {
         display: flex;
         margin-left: 78px;
@@ -283,23 +307,40 @@
 .menu-contact__tel {
     font-family: inherit;
     color: var(--accent-color);
-    @include font (34px, 500, 39.84px);
+    font-weight: 500;
+    font-size: 24px;
+    @media screen and (min-width: 480px) {
+        @include font (34px, 500, 39.84px);
+    }
+    
 }
 
 .menu-contact__mail {
     font-family: inherit;
-    @include font (24px, 500, 28px);
+    font-size: 18px;
+    font-weight: 500;
+    @media screen and (min-width: 480px) {
+        @include font (24px, 500, 28px);
+    }
+
     color: inherit;
 }
 
 .menu-social {
     display: flex;
-    align-items: center
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .menu-social__link {
     display: inline-block;
+    margin-bottom: 5px;
     @include font (18px, 500, 22px);
+    // font-size: calc(24px + 16 * ((100vw - 320px) / (1280 - 320)));
+    @media screen and (min-width:480px) {
+        
+    }
+    
     color: var(--accent-color);
 }
 .menu-social__item:not(:last-child)::after {
