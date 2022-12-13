@@ -874,7 +874,9 @@ body {
 }
 
 .project-list__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -891,8 +893,7 @@ body {
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .project-card {
-    display: flex;
-    flex-direction: column;
+    flex-grow: 1;
     width: 354px;
     height: 149px;
   }
