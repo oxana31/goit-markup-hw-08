@@ -865,14 +865,6 @@ body {
     margin-bottom: 30px;
   }
 }
-.first {
-  flex-grow: 5;
-}
-
-.second {
-  flex-grow: 1;
-}
-
 .project-list__link {
   display: flex;
   flex-direction: column;
@@ -895,7 +887,6 @@ body {
   .project-card {
     flex-grow: 1;
     width: 354px;
-    height: 149px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -912,22 +903,12 @@ body {
   letter-spacing: 0.06em;
   color: var(--title-text-color);
 }
-@media screen and (min-width: 768px) {
-  .project-title {
-    flex-grow: 1;
-  }
-}
 
 .project-desc {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.88;
   color: var(--primary-text-color);
-}
-@media screen and (min-width: 768px) {
-  .project-desc {
-    flex-grow: 5;
-  }
 }
 
 .project-img {
