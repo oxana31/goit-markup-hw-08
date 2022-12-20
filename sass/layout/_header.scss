@@ -288,6 +288,10 @@
 
 .menu-list {
     margin-bottom: 306px;
+    @media screen and (max-width: 479px) {
+        margin-bottom: 200px;
+    }
+    
 }
 
 .menu-list__item:not(:last-child) {
